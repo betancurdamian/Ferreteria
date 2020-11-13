@@ -26,6 +26,8 @@ public class Empresa implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
+    private String razonSocial;
+    
     @OneToMany(mappedBy = "unaEmpresaCliente", cascade = CascadeType.ALL)
     private List<Cliente> clientes;
     
@@ -128,6 +130,14 @@ public class Empresa implements Serializable {
 
     public void setVentas(List<Venta> ventas) {
         this.ventas = ventas;
+    }
+
+    public String getRazonSocial() {
+        return razonSocial;
+    }
+
+    public void setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
     }
     
 }

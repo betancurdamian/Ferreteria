@@ -1,0 +1,9 @@
+INSERT INTO `ferreteria`.`empresa` (`ID`, `RAZONSOCIAL`) VALUES 
+('1', 'Americana');
+
+
+INSERT INTO `ferreteria`.`cliente` (`ID`, `APELLIDO`, `DNI`, `NOMBRE`) VALUES 
+('2', 'Lopez', '40.000.001', 'Lautaro'),
+('3', 'Gomez', '40.000.022', 'Lautaro'),
+('4', 'Caceres', '40.000.021', 'Lautaro'),
+('5', 'Gutierrez', '40.000.001', 'Lautaro');
